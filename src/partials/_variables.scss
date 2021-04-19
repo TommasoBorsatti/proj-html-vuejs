@@ -1,0 +1,55 @@
+
+
+// CONTAINERS
+
+$container: 1200px;
+$containerSide: 800px;
+$containerSmall: 900px;
+
+//FONT
+
+// Size
+$fontSmall: 16px;
+$fontReg: 18px;
+$fontBig: 30px;
+$fontUltra: 45px;
+//Weight
+$fontLight: 300px;
+$fontRegular: 400px;
+$fontHeavy: 500px;
+
+// COLORS
+
+$primary:#2C2C2C;
+$secondary:#FFF;
+
+// BUTTONS
+
+// size
+$btnSmall: 40px;
+$btnReg: 60px;
+$btnWide: 90px;
+// padding
+$btnPdSmall: 3px 5px;
+$btnPdReg: 5px 8px;
+$btnPdWide: 10px 32px;
+//BG Color
+$btnMainColor: transparent;
+$btnAltColor: #0D66D0;
+$btnAltColorDark: #0654ad;
+// border:
+$btnBrdThin: 1px;
+$btnBrdReg: 3px;
+$btnBrdThick: 5px;
+
+// LINK & INPUT
+
+//Colors
+$linkPrimary: "";
+$linkPrimaryHover:"";
+$linkAlt:"";
+$linkAltHover:"";
+
+// Hero section
+
+$heroBgImg: url("");

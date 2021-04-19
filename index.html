@@ -18,68 +18,92 @@
   <!-- CDN FONTAWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <!-- /CDN FONTAWESOME -->
-
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-270x270.png">
+  <!-- FAVICON -->
 </head>
 <body>
+  <!-- Root di VUE JS -->
+  <div id="root">
 
-  <header>
-    <!-- container ristretto per navbar -->
-    <div class="container">
-      <!-- sezione con navbar display flex - link stampati con ciclo vfor -->
-      <nav id="main-nav">
-        <!-- sezione navbar con link -->
-        <div class="link-area">
-          <!-- elenco dei link stampati con v-for -->
-          <ul>
-            <li></li>
-          </ul>
-          <!-- /elenco dei link stampati con v-for -->
-        </div>
-        <!-- /sezione navbar con link -->
-        <!-- sezione navbar con logo -->
-        <div class="logo-area">
-          <img class="nav-logo" src="" alt="immagine logo aziendale">
-        </div>
-        <!-- /sezione navbar con logo -->
-        <!-- sezione navbar con carrello, account e searchbar -->
-        <div class="customer-area">
-          <!-- elenco dei link stampati con v-for -->
-          <ul>
-            <li></li>
-          </ul>
-          <!-- /elenco dei link stampati con v-for -->
-          <!-- campo di input della searchbar connessa con v-model a una variabile js con VUE -->
-          <input id="nav-searhbar" type="text" name="" value="">
-          <!-- /campo di input della searchbar connessa con v-model a una variabile js con VUE -->
-        </div>
-        <!-- /sezione navbar con carrello, account e searchbar -->
-      </nav>
-      <!-- /sezione con navbar display flex - link stampati con ciclo vfor -->
-    </div>
-    <!-- container ristretto per navbar -->
-
-    <!-- sezione con Hero -->
-    <div class="hero">
-      <!-- area con titolazione e button dell hero -->
-      <div class="hero-box">
-        <h2 class="hero-subtitle"></h2>
-        <h1 class="hero-title"></h1>
-        <button id="hero-button" class=""></button>
+    <header>
+      <!-- container ristretto per navbar -->
+      <div class="container container-wide">
+        <!-- sezione con navbar display flex - link stampati con ciclo vfor -->
+        <nav id="main-nav" class="pv-3">
+          <!-- sezione navbar con link -->
+          <div class="link-area">
+            <!-- elenco dei link stampati con v-for -->
+            <ul>
+              <li class="mr-5" v-for=" link in mainNavLinks"><a href="#">{{link}}<i class="ml-1 fas fa-chevron-down"></i></a></li>
+            </ul>
+            <!-- /elenco dei link stampati con v-for -->
+          </div>
+          <!-- /sezione navbar con link -->
+          <!-- sezione navbar con logo -->
+          <div class="logo-area">
+            <div class="logo-box">
+              <img class="nav-logo" src="img/dark-logo.png" alt="immagine logo aziendale">
+            </div>
+          </div>
+          <!-- /sezione navbar con logo -->
+          <!-- sezione navbar con carrello, account e searchbar -->
+          <div class="customer-area">
+            <!-- elenco dei link customer area-->
+            <ul>
+              <li class="mr-2"><a href="#"><i id="cart" class=" ml-2 fas fa-shopping-cart"></i></a></li>
+              <li class="mr-2"><a href="#"><i class="ml-2 far fa-user-circle"></i></a></li>
+            </ul>
+            <!-- /elenco dei link customer area -->
+            <!-- campo di input della searchbar connessa con v-model a una variabile js con VUE -->
+            <input id="nav-searchbar" v-model="searchInput" class="ml-2 pv-2 pl-2 pr-7" type="text" placeholder="Search..">
+            <label class="ml-5" for="nav-searchbar"><i class="fas fa-search"></i></label>
+            <!-- /campo di input della searchbar connessa con v-model a una variabile js con VUE -->
+          </div>
+          <!-- /sezione navbar con carrello, account e searchbar -->
+        </nav>
+        <!-- /sezione con navbar display flex - link stampati con ciclo vfor -->
       </div>
-      <!-- /area con titolazione e button dell hero -->
-      <!-- sidebar dell'Hero - posizionata in modo Assoluto -->
-      <nav class="sidebar">
-        <!-- lista con link della sidebar - link stampati con v-for -->
-        <ul>
-          <li></li>
-        </ul>
-        <!-- /lista con link della sidebar - link stampati con v-for -->
-      </nav>
-      <!-- /sidebar dell'Hero - posizionata in modo Assoluto -->
-    </div>
-    <!-- /sezione con Hero -->
-  </header>
+      <!-- container ristretto per navbar -->
 
+      <!-- sezione con Hero -->
+      <div class="hero">
+        <!-- area con titolazione e button dell hero -->
+        <div class="hero-box">
+          <h3 class="hero-subtitle">Commence business</h3>
+          <h1 class="hero-title">Distant Mentoring Program</h1>
+          <button id="hero-button" class="mt-8 alt">Download free guidebook<span class="ml-1">&rarr;</span></button>
+        </div>
+        <!-- /area con titolazione e button dell hero -->
+        <!-- sidebar dell'Hero - posizionata in modo Assoluto -->
+        <nav id="sidebar">
+          <!-- lista con link della sidebar -->
+          <ul>
+            <li class="mb-3 mt-3"><a href="#"><i class="fas fa-ruler-combined"></i></a></li>
+            <li class="mb-3"> <a href="#"><i class="far fa-life-ring"></i></a></li>
+            <li class="mb-3"> <a href="#"><i class="fas fa-book"></i></a></li>
+            <li class="mb-3"> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+          <!-- /lista con link della sidebar  -->
+        </nav>
+        <!-- /sidebar dell'Hero - posizionata in modo Assoluto -->
+      </div>
+      <!-- /sezione con Hero -->
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </div>
+  <!-- /Root di VUE JS -->
 
 <!-- MAIN SCRIPT JS -->
 <script src="script/script.js" charset="utf-8"></script>

@@ -1,0 +1,14 @@
+
+#sidebar{
+  position: absolute;
+  right: 0px;
+  top: 20vh;
+  width: 30px;
+  height: 140px;
+  border-radius: 4px;
+  background-color: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

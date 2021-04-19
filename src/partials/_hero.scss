@@ -1,0 +1,14 @@
+
+.hero{
+  height: 75vh;
+  background-image: $heroBgImg;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .hero-box{
+    text-align: center;
+  }
+
+}

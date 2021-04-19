@@ -1,0 +1,60 @@
+
+// HEADER
+
+// MAIN NAV :
+
+#main-nav{
+
+  & .link-area i{
+    font-size: $fontMicro;
+    color: $linkPrimary;
+    vertical-align: middle;
+  }
+
+  & .customer-area {
+
+    & li i{
+      color: $linkPrimary;
+      font-size: $fontReg;
+
+      &#cart{
+        position: relative;
+
+        //Cerchietto notifiche
+        &::after{
+          content: "0";
+          font-size: $fontMicro;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $secondary;
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          background-color: $linkAlt;
+        }
+      }
+    }
+
+    // label interna della searchbar
+    & label i{
+      color: $linkAlt;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+// SIDE BAR:
+
+#sidebar{
+
+  & i{
+    font-size: $fontMini;
+    color: $linkPrimary;
+  }
+}

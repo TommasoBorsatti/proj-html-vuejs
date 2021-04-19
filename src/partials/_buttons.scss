@@ -1,0 +1,34 @@
+
+button{
+
+  cursor: pointer;
+  border: none;
+  background-color: $btnMainColor;
+  color: $secondary;
+  padding: $btnPdWide;
+  border-radius: 8px;
+
+  &.alt{
+    background-color: $btnAltColor;
+    color: $other;
+    font-weight: $fontHeaviest;
+
+    & span{
+      font-weight: $fontHeaviest;
+      font-size: $fontSmall;
+      &:hover{
+        color: $secondary;
+      }
+    }
+
+    &:hover{
+      background-color: $btnMainColor;
+      color: $secondary;
+    }
+
+  }
+
+  &:focus{
+    outline: none;
+  }
+}

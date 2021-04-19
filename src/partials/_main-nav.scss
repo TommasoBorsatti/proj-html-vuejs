@@ -1,0 +1,49 @@
+
+
+#main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // sezione link principali
+  & .link-area{
+    flex-basis: 45%;
+
+    & ul {
+      display: flex;
+    }
+
+  }
+
+  // sezione area logo
+
+  & .logo-area{
+    flex-basis: 25%;
+
+    & .logo-box{
+      height: 25px;
+      display: flex;
+      align-items: center;
+
+      & > img{
+        height: 100%;
+      }
+
+    }
+
+  }
+
+  // sezione customer area
+
+  & .customer-area{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-end;
+
+    & ul{
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}

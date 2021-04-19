@@ -3,3 +3,21 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+
+//CONTAINERS
+
+.container{
+  margin: auto;
+  width: $container;
+
+  &.container-wide{
+    width: $containerWide;
+  }
+
+}
+
+// LISTS
+
+ul{
+  list-style: none;
+}

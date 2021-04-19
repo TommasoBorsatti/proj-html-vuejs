@@ -1,5 +1,22 @@
 
+// TITLES
+
 h1{
   font-weight: 500;
-  font-size: $bigFont;
+  font-size: $fontUltra;
+  color: $secondary;
+}
+
+h3{
+  font-weight: 700;
+  font-size: $fontBig;
+  color: $secondary;
+
+}
+
+// LINKS
+
+a{
+  text-decoration: none;
+  color: $linkPrimary;
 }

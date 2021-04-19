@@ -1,0 +1,78 @@
+
+// Padding Verticale
+
+@for $i from 1 through 20 {
+  .pv-#{$i} {
+    padding-top: 5px * $i;
+    padding-bottom: 5px * $i;
+  }
+}
+
+// Padding Destro
+
+@for $i from 1 through 20 {
+  .pr-#{$i} {
+    padding-right: 5px * $i;
+  }
+}
+
+// Padding Sinistro
+
+@for $i from 1 through 20 {
+  .pl-#{$i} {
+    padding-left: 5px * $i;
+  }
+}
+
+
+// Padding Laterale
+
+@for $i from 1 through 20 {
+  .plat-#{$i} {
+    padding-left: 5px * $i;
+    padding-right: 5px * $i;
+  }
+}
+
+
+// Margine Destro
+
+@for $i from 1 through 20 {
+  .mr-#{$i} {
+    margin-right: 5px * $i;
+  }
+}
+
+// Margine Sinistro
+
+@for $i from 1 through 20 {
+  .ml-#{$i} {
+    margin-left: 5px * $i;
+  }
+}
+
+// Margin Top
+
+@for $i from 1 through 20 {
+  .mt-#{$i} {
+    margin-top: 5px * $i;
+  }
+}
+
+// Margin Bottom
+
+@for $i from 1 through 20 {
+  .mb-#{$i} {
+    margin-bottom: 5px * $i;
+  }
+}
+
+
+// Margin Laterale
+
+@for $i from 1 through 20 {
+  .mlat-#{$i} {
+    margin-left: 5px * $i;
+    margin-right: 5px * $i;
+  }
+}

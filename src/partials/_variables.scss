@@ -2,26 +2,29 @@
 
 // CONTAINERS
 
-$container: 1200px;
-$containerSide: 800px;
-$containerSmall: 900px;
+$container: 900px;
+$containerWide: 1300px;
 
 //FONT
 
 // Size
+$fontMicro: 8px;
+$fontMini: 12px;
 $fontSmall: 16px;
 $fontReg: 18px;
-$fontBig: 30px;
+$fontBig: 26px;
 $fontUltra: 45px;
 //Weight
-$fontLight: 300px;
-$fontRegular: 400px;
-$fontHeavy: 500px;
+$fontLight: 300;
+$fontRegular: 400;
+$fontHeavy: 500;
+$fontHeaviest: 700;
 
 // COLORS
 
-$primary:#2C2C2C;
+$primary: #141423; //Vulcan
 $secondary:#FFF;
+$other: #1fad95; // Mountain Meadow
 
 // BUTTONS
 
@@ -32,10 +35,10 @@ $btnWide: 90px;
 // padding
 $btnPdSmall: 3px 5px;
 $btnPdReg: 5px 8px;
-$btnPdWide: 10px 32px;
+$btnPdWide: 15px 32px;
 //BG Color
-$btnMainColor: transparent;
-$btnAltColor: #0D66D0;
+$btnMainColor: #1fad95; // Mountain Meadow
+$btnAltColor: #FFF;
 $btnAltColorDark: #0654ad;
 // border:
 $btnBrdThin: 1px;
@@ -45,11 +48,12 @@ $btnBrdThick: 5px;
 // LINK & INPUT
 
 //Colors
-$linkPrimary: "";
+$linkPrimary: #141423; //Vulcan
 $linkPrimaryHover:"";
-$linkAlt:"";
+$linkAlt: #1fad95; // Mountain Meadow
 $linkAltHover:"";
+$inputPrimary: #e2e2eD; //Quill grey
 
 // Hero section
 
-$heroBgImg: url("");
+$heroBgImg: url("../img/home-3-hero-bg.jpg");

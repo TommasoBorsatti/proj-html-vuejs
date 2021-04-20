@@ -15,6 +15,9 @@ body {
 .container.container-wide {
   width: 1300px;
 }
+.container.container-narrow {
+  width: 600px;
+}
 
 ul {
   list-style: none;
@@ -965,7 +968,7 @@ button:focus {
 }
 
 #sidebar {
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 20vh;
   width: 30px;
@@ -981,6 +984,9 @@ button:focus {
 section.sect-box {
   display: flex;
   justify-content: space-between;
+}
+section.sect-box:nth-of-type(even) {
+  flex-direction: row-reverse;
 }
 section.sect-box .text-box {
   flex-basis: 40%;
@@ -1019,12 +1025,67 @@ section.sect-box#learn .img-box::after {
   border-radius: 10px;
   background-image: url("../img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg");
   background-size: cover;
-  z-index: 50;
   position: absolute;
   top: -75px;
   right: -50px;
 }
 section.sect-box#learn a {
+  color: #1fad95;
+  font-weight: 700;
+}
+section.sect-box#upgrade {
+  position: relative;
+  background-image: url("../img/maxcoach-shape-07.png");
+  background-size: 120px;
+  background-position: bottom;
+  background-position-x: 475px;
+  background-repeat: no-repeat;
+}
+section.sect-box#upgrade::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/maxcoach-shape-05.png");
+  background-size: 130px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 115px;
+  left: -80px;
+}
+section.sect-box#upgrade .img-box {
+  flex-basis: 60%;
+  position: relative;
+}
+section.sect-box#upgrade .img-box::after {
+  content: "";
+  width: 70px;
+  height: 50px;
+  background-image: url("../img/icon-youtube-play.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+section.sect-box#upgrade .text-box {
+  flex-basis: 35%;
+}
+section.sect-box a {
+  color: #141423;
+  font-weight: 600;
+}
+
+.breaker {
+  text-align: center;
+  display: flex;
+}
+.breaker .container-narrow {
+  display: flex;
+  justify-content: space-around;
+}
+.breaker h2 {
   color: #1fad95;
   font-weight: 700;
 }

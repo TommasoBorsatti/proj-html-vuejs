@@ -1,0 +1,18 @@
+
+.breaker{
+  text-align: center;
+  display: flex;
+
+  & .container-narrow{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  //TIPOGRAFIA DEL BREAKER
+
+  & h2{
+    color:$other;
+    font-weight: $fontHeaviest;
+  }
+
+}

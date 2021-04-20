@@ -3,6 +3,10 @@ section.sect-box{
   display: flex;
   justify-content: space-between;
 
+  &:nth-of-type(even){
+    flex-direction: row-reverse;
+  }
+
   & .text-box{
     flex-basis: 40%;
   }
@@ -48,7 +52,6 @@ section.sect-box{
         border-radius: 10px;
         background-image: $bgThird;
         background-size: cover;
-        z-index: 50;
         position: absolute;
         top: -75px;
         right: -50px;
@@ -57,13 +60,73 @@ section.sect-box{
     }
 
     // link e tipografia personalizzata dellA sezione
-
     a{
       color: $linkAlt;
       font-weight: $fontHeaviest;
     }
 
   }
+
+  &#upgrade{
+
+    position: relative;
+    background-image: $bgSecond;
+    background-size: 120px;
+    background-position: bottom;
+    background-position-x: 475px;
+    background-repeat: no-repeat;
+
+    &::before{
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-image: $bgFifth;
+      background-size: 130px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 115px;
+      left: -80px;
+    }
+
+
+
+    & .img-box{
+      flex-basis: 60%;
+      position: relative;
+
+      //formattazione background e decorazioni personalizzata della section
+
+      &::after{
+        content: "";
+        width: 70px;
+        height: 50px;
+        background-image: $bgFourth;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+
+      }
+
+
+    }
+
+    & .text-box{
+      flex-basis: 35%;
+    }
+
+  }
+
+  // link e tipografia personalizzata dellA sezione
+
+  a{
+    color: $linkPrimary;
+    font-weight: $fontHeavier;
+  }
+
 
 
 

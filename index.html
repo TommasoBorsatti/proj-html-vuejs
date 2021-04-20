@@ -38,7 +38,7 @@
           <div class="link-area">
             <!-- elenco dei link stampati con v-for -->
             <ul>
-              <li class="mr-5" v-for=" link in mainNavLinks"><a href="#">{{link}}<i class="ml-1 fas fa-chevron-down"></i></a></li>
+              <li class="mr-5" v-for=" link in mainNavLinks"><a target="_blank" :href="link.url">{{link.label}}<i class="ml-1 fas fa-chevron-down"></i></a></li>
             </ul>
             <!-- /elenco dei link stampati con v-for -->
           </div>
@@ -55,11 +55,11 @@
             <!-- elenco dei link customer area-->
             <ul>
               <li class="mr-2"><a href="#"><i id="cart" class=" ml-2 fas fa-shopping-cart"></i></a></li>
-              <li class="mr-2"><a href="#"><i class="ml-2 far fa-user-circle"></i></a></li>
+              <li v-for="link in customerAreaLinks" class="mr-2"><a target="_blank" :href="link.url"><i class="ml-2" :class="link.label"></i></a></li>
             </ul>
             <!-- /elenco dei link customer area -->
             <!-- campo di input della searchbar connessa con v-model a una variabile js con VUE -->
-            <input id="nav-searchbar" v-model="searchInput" class="ml-2 pv-2 pl-2 pr-7" type="text" placeholder="Search..">
+            <input id="nav-searchbar" v-model="searchInput" @keydown.enter="mySearch" class="ml-2 pv-2 pl-2 pr-7" type="text" placeholder="Search..">
             <label class="ml-5" for="nav-searchbar"><i class="fas fa-search"></i></label>
             <!-- /campo di input della searchbar connessa con v-model a una variabile js con VUE -->
           </div>
@@ -230,7 +230,6 @@
           </div>
         </div>
         <!-- /sezione che interrompe il flusso della pagina - ripetibile -->
-
         <!--terza sezione di tipo ripetibile box testo + box immagini -->
         <section class="sect-box pv-15 mt-12" id="why">
           <!-- box del testo -->
@@ -266,13 +265,81 @@
         </section>
         <!-- /quarta sezione di tipo ripetibile box testo + box immagini -->
         <!-- seconda sezione di tipo ripetibile con 3 immagini centrate -->
-        <section id="blogs">
-
+        <section class="triplet pv-15 mt-12" id="blogs">
+          <h4 class="mb-4">JOIN MAXCOACH AT BEST</h4>
+          <h2 class="mb-8">Latest Online <span>Courses</span></h2>
+          <div class="triplet-row">
+            <div class="triplet-box mr-4">
+              <div class="img-box">
+                <img src="img/course-02-480x298.jpg" alt="">
+                <div class="flag">
+                  <div class="pop-up">FREE</div>
+                </div>
+              </div>
+              <div class="info-box plat-5">
+                <h3 class="mt-3">$40.00</h3>
+                <p class="mt-3">Learning to Write as a Professional Author</p>
+                <div class="icon-row mt-5">
+                  <div class="icon-box">
+                    <i class="far fa-file-alt mr-1"></i>
+                    <h5 class="mr-5">20 Lessons</h5>
+                  </div>
+                  <div class="icon-box">
+                    <i class="far fa-user mr-1"></i>
+                    <h5>50 Students</h5>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="triplet-box mr-4">
+              <div class="img-box">
+                <img src="img/stock-full-hd-03-480x298.jpg" alt="">
+                <div class="flag">
+                  <div class="pop-up">FREE</div>
+                </div>
+              </div>
+              <div class="info-box plat-5">
+                <h3 class="mt-3">$0.00</h3>
+                <p class="mt-3">Customer-centric Info-Tech Strategies</p>
+                <div class="icon-row mt-5">
+                  <div class="icon-box">
+                    <i class="far fa-file-alt mr-1"></i>
+                    <h5 class="mr-5">24 Lessons</h5>
+                  </div>
+                  <div class="icon-box">
+                    <i class="far fa-user mr-1"></i>
+                    <h5>769 Students</h5>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="triplet-box mr-4">
+              <div class="img-box">
+                <img src="img/stock-full-hd-04-480x298.jpg" alt="">
+                <div class="flag">
+                  <div class="pop-up">FREE</div>
+                </div>
+              </div>
+              <div class="info-box plat-5">
+                <h3 class="mt-3">$19.00</h3>
+                <p class="mt-3">Open Programming Courses for Everyone: Python</p>
+                <div class="icon-row mt-5">
+                  <div class="icon-box">
+                    <i class="far fa-file-alt mr-1"></i>
+                    <h5 class="mr-5">20 Lessons</h5>
+                  </div>
+                  <div class="icon-box">
+                    <i class="far fa-user mr-1"></i>
+                    <h5>50 Students</h5>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- /seconda sezione di tipo ripetibile con 3 immagini centrate -->
         <!-- sezione newsletter -->
         <section id="newsletters">
-
         </section>
         <!-- /sezione newsletter -->
       </div>

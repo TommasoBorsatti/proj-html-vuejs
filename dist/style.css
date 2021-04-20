@@ -1089,3 +1089,77 @@ section.sect-box a {
   color: #1fad95;
   font-weight: 700;
 }
+
+section.triplet {
+  text-align: center;
+}
+section.triplet .triplet-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+section.triplet .triplet-row .triplet-box {
+  flex-basis: calc(100% / 3);
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+section.triplet .triplet-row .triplet-box:hover p {
+  color: #1fad95;
+}
+section.triplet .triplet-row .triplet-box .img-box {
+  position: relative;
+}
+section.triplet .triplet-row .triplet-box .img-box:hover .flag {
+  display: block;
+}
+section.triplet .triplet-row .triplet-box .img-box .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 30px;
+  display: none;
+  background-color: #ee7455;
+  padding: 6px;
+  color: #FFF;
+  font-weight: 600;
+}
+section.triplet .triplet-row .triplet-box .img-box .flag::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #ee7455;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid #ee7455;
+}
+section.triplet .triplet-row .triplet-box .img-box > img {
+  width: 100%;
+}
+section.triplet .triplet-row .triplet-box .icon-row {
+  display: flex;
+}
+section.triplet .triplet-row .triplet-box .icon-row .icon-box {
+  display: flex;
+  align-items: center;
+}
+section.triplet h3 {
+  color: #1fad95;
+  font-weight: 700;
+  font-size: 18px;
+}
+section.triplet p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #141423;
+  line-height: 28px;
+}
+section.triplet i, section.triplet h5 {
+  font-size: 12px;
+  color: #8a9391;
+  font-weight: 300;
+}

@@ -1,0 +1,98 @@
+
+section.triplet{
+  text-align: center;
+
+  & .triplet-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    & .triplet-box{
+      flex-basis: calc(100% / 3);
+      text-align: left;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover p{
+        color: $other;
+      }
+
+      & .img-box{
+        position: relative;
+
+        &:hover .flag{
+          display: block;
+        }
+
+        & .flag{
+          position: absolute;
+          top:0;
+          right:0;
+          width:60px;
+          height: 30px;
+          display: none;
+          background-color: $popUpColor;
+          padding: 6px;
+          color: $secondary;
+          font-weight: $fontHeavier;
+
+          &::after{
+            content: "";
+            position: absolute;
+            left: -15px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-top: 15px solid $popUpColor;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid $popUpColor;
+          }
+
+        }
+
+        & > img{
+          width: 100%;
+
+        }
+
+      }
+
+      & .icon-row{
+        display:flex;
+
+        & .icon-box{
+          display: flex;
+          align-items: center;
+        }
+
+      }
+
+    }
+
+  }
+
+  // tipografia sezione Triplet
+
+  h3{
+    color: $other;
+    font-weight: $fontHeaviest;
+    font-size: $fontReg;
+  }
+
+  p{
+    font-weight: $fontHeaviest;
+    font-size: $fontSmall;
+    color: $primary;
+    line-height: 28px;
+
+  }
+
+  i, h5{
+    font-size: $fontMini;
+    color: $fifth;
+    font-weight: $fontLight;
+  }
+
+
+}

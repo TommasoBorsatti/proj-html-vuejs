@@ -1,0 +1,70 @@
+
+section.sect-box{
+  display: flex;
+  justify-content: space-between;
+
+  & .text-box{
+    flex-basis: 40%;
+  }
+
+  & .img-box{
+    flex-basis: 45%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  // SEZIONI SPECIFICHE
+
+  &#learn{
+
+    //formattazione background e decorazioni personalizzata della section
+    background-image: $bgSecond;
+    background-position-x: right;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size: 140px;
+
+    & .img-box{
+      position: relative;
+
+      &::before{
+        content: "";
+        width: 75px;
+        height: 75px;
+        background-image: $bgFirst;
+        background-size: cover;
+        z-index: 50;
+        position: absolute;
+        bottom: -17px;
+        right: 45px;
+      }
+
+      &::after{
+        content: "";
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        background-image: $bgThird;
+        background-size: cover;
+        z-index: 50;
+        position: absolute;
+        top: -75px;
+        right: -50px;
+      }
+
+    }
+
+    // link e tipografia personalizzata dellA sezione
+
+    a{
+      color: $linkAlt;
+      font-weight: $fontHeaviest;
+    }
+
+  }
+
+
+
+}

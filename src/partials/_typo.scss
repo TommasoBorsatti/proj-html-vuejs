@@ -2,16 +2,39 @@
 // TITLES
 
 h1{
-  font-weight: 500;
+  font-weight: $fontHeavy;
   font-size: $fontUltra;
   color: $secondary;
 }
 
+h2{
+  font-weight: $fontHeavier;
+  font-size: $fontSuper;
+  color: $primary;
+
+  & > span{
+    color: $other;
+    font-weight: $fontLight;
+  }
+}
+
 h3{
-  font-weight: 700;
+  font-weight: $fontHeaviest;
   font-size: $fontBig;
   color: $secondary;
+}
 
+h4{
+  font-weight: $fontHeavy;
+  font-size: $fontSmall;
+  color: $third;
+}
+
+// CONTENT
+
+p{
+  font-size: $fontSmall;
+  color: $third;
 }
 
 // LINKS

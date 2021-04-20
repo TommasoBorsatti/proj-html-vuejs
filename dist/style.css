@@ -10,7 +10,7 @@ body {
 
 .container {
   margin: auto;
-  width: 900px;
+  width: 950px;
 }
 .container.container-wide {
   width: 1300px;
@@ -806,10 +806,31 @@ h1 {
   color: #FFF;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #141423;
+}
+h2 > span {
+  color: #1fad95;
+  font-weight: 300;
+}
+
 h3 {
   font-weight: 700;
   font-size: 26px;
   color: #FFF;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c6c6b;
+}
+
+p {
+  font-size: 14px;
+  color: #6c6c6b;
 }
 
 a {
@@ -886,7 +907,7 @@ button.alt {
 }
 button.alt span {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 button.alt span:hover {
   color: #FFF;
@@ -955,4 +976,55 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+section.sect-box {
+  display: flex;
+  justify-content: space-between;
+}
+section.sect-box .text-box {
+  flex-basis: 40%;
+}
+section.sect-box .img-box {
+  flex-basis: 45%;
+}
+section.sect-box .img-box img {
+  width: 100%;
+}
+section.sect-box#learn {
+  background-image: url("../img/maxcoach-shape-07.png");
+  background-position-x: right;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  background-size: 140px;
+}
+section.sect-box#learn .img-box {
+  position: relative;
+}
+section.sect-box#learn .img-box::before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  background-image: url("../img/maxcoach-shape-02.png");
+  background-size: cover;
+  z-index: 50;
+  position: absolute;
+  bottom: -17px;
+  right: 45px;
+}
+section.sect-box#learn .img-box::after {
+  content: "";
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  background-image: url("../img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg");
+  background-size: cover;
+  z-index: 50;
+  position: absolute;
+  top: -75px;
+  right: -50px;
+}
+section.sect-box#learn a {
+  color: #1fad95;
+  font-weight: 700;
 }

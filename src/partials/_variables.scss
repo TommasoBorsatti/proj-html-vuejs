@@ -2,7 +2,7 @@
 
 // CONTAINERS
 
-$container: 900px;
+$container: 950px;
 $containerWide: 1300px;
 
 //FONT
@@ -10,20 +10,22 @@ $containerWide: 1300px;
 // Size
 $fontMicro: 8px;
 $fontMini: 12px;
-$fontSmall: 16px;
+$fontSmall: 14px;
 $fontReg: 18px;
 $fontBig: 26px;
+$fontSuper: 36px;
 $fontUltra: 45px;
 //Weight
 $fontLight: 300;
 $fontRegular: 400;
 $fontHeavy: 500;
+$fontHeavier:600;
 $fontHeaviest: 700;
 
 // COLORS
-
 $primary: #141423; //Vulcan
 $secondary:#FFF;
+$third: #6c6c6b; // Storm Dust
 $other: #1fad95; // Mountain Meadow
 
 // BUTTONS
@@ -54,6 +56,12 @@ $linkAlt: #1fad95; // Mountain Meadow
 $linkAltHover:"";
 $inputPrimary: #e2e2eD; //Quill grey
 
-// Hero section
+// Hero IMG
 
 $heroBgImg: url("../img/home-3-hero-bg.jpg");
+
+// Main BackGrounds;
+
+$bgFirst: url("../img/maxcoach-shape-02.png");
+$bgSecond: url("../img/maxcoach-shape-07.png");
+$bgThird: url("../img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg")

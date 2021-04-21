@@ -60,7 +60,7 @@
             <!-- /elenco dei link customer area -->
             <!-- campo di input della searchbar connessa con v-model a una variabile js con VUE -->
             <input id="nav-searchbar" v-model="searchInput" @keydown.enter="mySearch" class="ml-2 pv-2 pl-2 pr-7" type="text" placeholder="Search..">
-            <label class="ml-5" for="nav-searchbar"><i class="fas fa-search"></i></label>
+            <label class="ml-5 bar-label" for="nav-searchbar"><i class="fas fa-search"></i></label>
             <!-- /campo di input della searchbar connessa con v-model a una variabile js con VUE -->
           </div>
           <!-- /sezione navbar con carrello, account e searchbar -->
@@ -385,15 +385,45 @@
       <!-- Container di riferimento del Main -->
       <div class="container">
         <!-- sezione newsletter -->
-        <section id="newsletters">
+        <section class="breaker pt-10 pb-20"id="newsletters">
+            <h2>Subscribe <span>Newsletters</span></h2>
+            <div class="newsletter-box mt-4">
+              <div class="text-box">
+                <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+                <div class="input-box pt-10">
+                  <input id="email-sub" v-model="emailInput" @keydown.enter="myMail" class="ml-2 pv-3 pl-2 pr-21" type="email" placeholder="Enter your email">
+                  <label @click="myMail"for="email-sub" class ="side-label">Subscribe</label>
+                </div>
+              </div>
+            </div>
         </section>
         <!-- /sezione newsletter -->
       </div>
       <!-- /container di riferimento del Main -->
     </main>
-
     <footer>
-
+      <div class="container pt-5 pb-15">
+        <div class="left-area">
+          <h5>Hola Dea</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  et qui praesentium reiciendis!</p>
+        </div>
+        <div class="right-area">
+          <div class="foot-col-1 mr-6">
+            <h5>Hola Dea</h5>
+            <p>Numquam distinctio esse, cupiditate maiores possimus ipsam voluptatibus obcaecati</p>
+          </div>
+          <div class="foot-col-2 mr-6 mt-5">
+            <p>aspernatur incidunt ullam nihil repudiandae temporibus placeat, sed tenetur</p>
+          </div>
+          <div class="foot-col-3">
+            <h5>Hola Dea</h5>
+            <p>aspernatur incidunt ullam nihil repudiandae temporibus placeat, sed tenetur</p>
+          </div>
+        </div>
+        <div class="center-area mt-8">
+          <p>&#169; 2020 MaxCoach. All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
 
   </div>

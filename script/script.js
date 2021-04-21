@@ -44,6 +44,7 @@ const App = new Vue ({
     ],
 
     searchInput:"",
+    emailInput:"",
 
   },
 
@@ -52,6 +53,11 @@ const App = new Vue ({
     mySearch: function(){
       console.log(this.searchInput);
       this.searchInput="";
+    },
+
+    myMail: function(){
+      console.log(this.emailInput);
+      this.emailInput="";
     }
 
   },

@@ -27,7 +27,7 @@
 
 // Padding Destro
 
-@for $i from 1 through 20 {
+@for $i from 1 through 40 {
   .pr-#{$i} {
     padding-right: 5px * $i;
   }

@@ -363,6 +363,86 @@ ul {
   padding-right: 100px;
 }
 
+.pr-21 {
+  padding-right: 105px;
+}
+
+.pr-22 {
+  padding-right: 110px;
+}
+
+.pr-23 {
+  padding-right: 115px;
+}
+
+.pr-24 {
+  padding-right: 120px;
+}
+
+.pr-25 {
+  padding-right: 125px;
+}
+
+.pr-26 {
+  padding-right: 130px;
+}
+
+.pr-27 {
+  padding-right: 135px;
+}
+
+.pr-28 {
+  padding-right: 140px;
+}
+
+.pr-29 {
+  padding-right: 145px;
+}
+
+.pr-30 {
+  padding-right: 150px;
+}
+
+.pr-31 {
+  padding-right: 155px;
+}
+
+.pr-32 {
+  padding-right: 160px;
+}
+
+.pr-33 {
+  padding-right: 165px;
+}
+
+.pr-34 {
+  padding-right: 170px;
+}
+
+.pr-35 {
+  padding-right: 175px;
+}
+
+.pr-36 {
+  padding-right: 180px;
+}
+
+.pr-37 {
+  padding-right: 185px;
+}
+
+.pr-38 {
+  padding-right: 190px;
+}
+
+.pr-39 {
+  padding-right: 195px;
+}
+
+.pr-40 {
+  padding-right: 200px;
+}
+
 .pl-1 {
   padding-left: 5px;
 }
@@ -1071,6 +1151,12 @@ h4 {
   color: #6c6c6b;
 }
 
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFF;
+}
+
 p {
   font-size: 14px;
   color: #6c6c6b;
@@ -1084,18 +1170,39 @@ a {
 input:focus {
   outline: none;
 }
-input#nav-searchbar {
+input#nav-searchbar, input#email-sub {
   background-color: #e2e2eD;
   border-radius: 5px;
   border: none;
 }
+input#email-sub {
+  width: 450px;
+}
 
-label {
+label.bar-label {
   display: flex;
   align-items: center;
   position: relative;
   left: -50px;
   z-index: 20;
+}
+label.side-label {
+  background-color: #1fad95;
+  width: 100px;
+  height: 45px;
+  position: absolute;
+  bottom: 0px;
+  right: 54px;
+  border-radius: 5px;
+  line-height: 45px;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#newsletters .input-box {
+  position: relative;
 }
 
 #main-nav .link-area i {
@@ -1472,9 +1579,19 @@ section.sect-box#transform button:hover > a {
   flex-direction: column;
   align-items: center;
 }
-.breaker h2 {
+.breaker#customer-data h2 {
   color: #1fad95;
   font-weight: 700;
+}
+.breaker#newsletters {
+  display: block;
+}
+.breaker#newsletters .newsletter-box {
+  display: flex;
+  justify-content: center;
+}
+.breaker#newsletters .newsletter-box .text-box {
+  flex-basis: 60%;
 }
 .breaker p {
   font-size: 18px;
@@ -1574,4 +1691,42 @@ section.triplet#blogs p {
   font-size: 18px;
   color: #141423;
   line-height: 28px;
+}
+
+footer {
+  background-color: #141423;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer .container .left-area {
+  background-color: green;
+  flex-basis: 28%;
+}
+footer .container .right-area {
+  background-color: blue;
+  flex-basis: 50%;
+  display: flex;
+}
+footer .container .right-area .foot-col-1 {
+  flex-basis: 30%;
+}
+footer .container .right-area .foot-col-2 {
+  flex-basis: 30%;
+}
+footer .container .right-area .foot-col-3 {
+  flex-basis: 30%;
+}
+footer .container .center-area {
+  flex-basis: 100%;
+  color: white;
+  text-align: center;
+}
+footer p,
+footer a {
+  color: #abab8c;
+  font-weight: 600;
 }

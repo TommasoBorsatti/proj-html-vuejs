@@ -5,18 +5,46 @@ input{
     outline: none;
   }
 
-  &#nav-searchbar{
+  &#nav-searchbar,
+  &#email-sub{
     background-color: $inputPrimary;
     border-radius: 5px;
     border: none;
   }
 
+  &#email-sub{
+    width: 450px;
+  }
+
 }
 
 label{
+
+  &.bar-label{
   display: flex;
   align-items: center;
   position: relative;
   left: -50px;
-  z-index: 20
+  z-index: 20;
+  }
+
+  &.side-label{
+    background-color: $other;
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    bottom: 0px;
+    right: 54px;
+    border-radius: 5px;
+    line-height: 45px;
+    font-size: $fontMini;
+    color: $secondary;
+    font-weight: $fontHeavier;
+    cursor: pointer;
+  }
+
+}
+
+#newsletters .input-box{
+  position: relative;
 }

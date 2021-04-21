@@ -13,7 +13,6 @@ section.triplet{
       border-radius: 5px;
       overflow: hidden;
       cursor: pointer;
-      background-color: #FFF;
 
       &:hover p{
         color: $other;
@@ -73,13 +72,7 @@ section.triplet{
 
   }
 
-  // tipografia sezione Triplet
-
-  h3{
-    color: $other;
-    font-weight: $fontHeaviest;
-    font-size: $fontReg;
-  }
+  // tipografia generale sezione Triplet
 
   p{
     font-weight: $fontHeaviest;
@@ -100,6 +93,38 @@ section.triplet{
   &#courses{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(245,245,245,1) 100%);
+
+    & .triplet-box{
+      background-color: #FFF;
+    }
+
+    // TIPOGRAFIA SPECIFICA DELLA SEZIONE
+
+    & h3{
+      color: $other;
+      font-weight: $fontHeaviest;
+      font-size: $fontReg;
+    }
+
+  }
+
+  &#blogs{
+    background-color: #f5f5f5;
+
+    & .triplet-box:hover p{
+      color: $other;
+    }
+
+    // TIPOGRAFIA SPECIFICA DELLA SEZIONE
+
+    & p{
+      font-weight: $fontHeaviest;
+      font-size: $fontReg;
+      color: $primary;
+      line-height: 28px;
+
+    }
+
   }
 
 

@@ -70,7 +70,7 @@
 
 // Margin Top
 
-@for $i from 1 through 20 {
+@for $i from 1 through 40 {
   .mt-#{$i} {
     margin-top: 5px * $i;
   }

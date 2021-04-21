@@ -37,9 +37,10 @@
   // FORMATTAZIONI DECORAZIONI E BACKGROUND DELLA SINGOLA sezione
 
   &#bullets{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
-    
+    background-color: #f5f5f5;
+    background-image: url("../img/curva-bianca.svg"), linear-gradient(180deg, rgba(245,245,245,1) 95%, rgba(255,255,255,1) 100%); 
+
+
     & .container-narrow{
 
       flex-direction: column;

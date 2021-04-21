@@ -13,6 +13,7 @@ section.triplet{
       border-radius: 5px;
       overflow: hidden;
       cursor: pointer;
+      background-color: #FFF;
 
       &:hover p{
         color: $other;
@@ -92,6 +93,13 @@ section.triplet{
     font-size: $fontMini;
     color: $fifth;
     font-weight: $fontLight;
+  }
+
+  // formattazione specifica decorazioni e bg della singola sezione
+
+  &#courses{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(245,245,245,1) 100%);
   }
 
 

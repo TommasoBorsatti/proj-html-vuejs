@@ -1236,7 +1236,6 @@ section.sect-box a {
   color: #141423;
   font-weight: 600;
 }
-
 .breaker {
   text-align: center;
   display: flex;
@@ -1259,8 +1258,8 @@ section.sect-box a {
   color: #141423;
 }
 .breaker#bullets {
-  background: white;
-  background: linear-gradient(180deg, white 0%, whitesmoke 100%);
+  background-color: #f5f5f5;
+  background-image: url("../img/curva-bianca.svg"), linear-gradient(180deg, whitesmoke 95%, white 100%);
 }
 .breaker#bullets .container-narrow {
   flex-direction: column;
@@ -1291,6 +1290,7 @@ section.triplet .triplet-row .triplet-box {
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+  background-color: #FFF;
 }
 section.triplet .triplet-row .triplet-box:hover p {
   color: #1fad95;
@@ -1349,4 +1349,8 @@ section.triplet i, section.triplet h5 {
   font-size: 12px;
   color: #8a9391;
   font-weight: 300;
+}
+section.triplet#courses {
+  background: white;
+  background: linear-gradient(180deg, white 1%, whitesmoke 100%);
 }

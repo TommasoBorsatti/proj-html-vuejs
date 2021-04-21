@@ -8,6 +8,23 @@
   }
 }
 
+// Padding Top
+
+@for $i from 1 through 20 {
+  .pt-#{$i} {
+    padding-top: 5px * $i;
+  }
+}
+
+// Padding Bottom
+
+@for $i from 1 through 20 {
+  .pb-#{$i} {
+    padding-bottom: 5px * $i;
+  }
+}
+
+
 // Padding Destro
 
 @for $i from 1 through 20 {

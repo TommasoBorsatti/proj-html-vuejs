@@ -6,13 +6,64 @@
   & .container-narrow{
     display: flex;
     justify-content: space-around;
+
+    & ul{
+      list-style: none;
+      display:flex;
+
+      & > li{
+
+        & a{
+          color: $fourth;
+
+          &:hover{
+            color: $primary;
+          }
+
+        }
+
+        &:first-of-type a{
+          color: $primary;
+        }
+
+      }
+
+    }
+
   }
 
+
+
+  // FORMATTAZIONI DECORAZIONI E BACKGROUND DELLA SINGOLA sezione
+
+  &#bullets{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    
+    & .container-narrow{
+
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   //TIPOGRAFIA DEL BREAKER
 
   & h2{
     color:$other;
     font-weight: $fontHeaviest;
   }
+
+  & p{
+    font-size: $fontReg;
+  }
+
+  & .text-box{
+
+    a{
+      font-weight: $fontHeavier;
+    }
+  }
+
+
 
 }

@@ -402,27 +402,54 @@
       <!-- /container di riferimento del Main -->
     </main>
     <footer>
-      <div class="container pt-5 pb-15">
+      <div class="container pt-10 pb-10">
+        <!-- sezione informazioni statiche -->
         <div class="left-area">
-          <h5>Hola Dea</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  et qui praesentium reiciendis!</p>
+          <h5 class="mb-2">Address</h5>
+          <ul>
+            <li class="address mb-2">382 NE 191st St 87394 Miami, FL 33179-3899</li>
+            <li class="phone-number mb-2">+1(305) 547-9909(9am - 5pm EST, Monday - Friday)</li>
+            <li class="info-mail mb-2">support@maxcoach.com</li>
+          </ul>
+          <!-- Link dinamici con icone social -->
+          <ul class="social-list mt-5">
+            <li v-for="link in FooterSocialLink" class="mr-3"><a target="_blank" :href="link.url"><i :class="link.label"></i></a></li>
+          </ul>
+          <!-- /Link dinamici con icone social -->
         </div>
+        <!-- /sezione informazioni statiche -->
+        <!-- sezione link dinamici -->
         <div class="right-area">
-          <div class="foot-col-1 mr-6">
-            <h5>Hola Dea</h5>
-            <p>Numquam distinctio esse, cupiditate maiores possimus ipsam voluptatibus obcaecati</p>
+          <!-- colonna link 1 -->
+          <div class="foot-col-1 mr-1">
+            <h5 class="mb-2">Explore</h5>
+            <ul>
+              <li v-for="link in footerLinkExploreA" class="mb-2"><a target="_blank" :href="link.url">{{link.label}}</a></li>
+            </ul>
           </div>
-          <div class="foot-col-2 mr-6 mt-5">
-            <p>aspernatur incidunt ullam nihil repudiandae temporibus placeat, sed tenetur</p>
+          <!-- /colonna link 1 -->
+          <!-- colonna link 2 -->
+          <div class="foot-col-2 mr-1 mt-5">
+            <ul class="mt-2">
+              <li v-for="link in footerLinkExploreB" class="mb-2"><a target="_blank" :href="link.url">{{link.label}}</a></li>
+            </ul>
           </div>
+          <!-- /colonna link 2 -->
+          <!-- colonna link 3 -->
           <div class="foot-col-3">
-            <h5>Hola Dea</h5>
-            <p>aspernatur incidunt ullam nihil repudiandae temporibus placeat, sed tenetur</p>
+            <h5 class="mb-2">Information</h5>
+            <ul>
+              <li v-for="link in footerLinkInfo" class="mb-2"><a target="_blank" :href="link.url">{{link.label}}</a></li>
+            </ul>
           </div>
+          <!-- /colonna link 3 -->
         </div>
-        <div class="center-area mt-8">
+        <!-- /sezione informazioni statiche -->
+        <!-- copyright area -->
+        <div class="center-area mt-10">
           <p>&#169; 2020 MaxCoach. All Rights Reserved</p>
         </div>
+        <!-- /copyright area -->
       </div>
     </footer>
 

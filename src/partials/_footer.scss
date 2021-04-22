@@ -9,12 +9,18 @@ footer{
     flex-wrap: wrap;
 
     & .left-area{
-      background-color: green;
-      flex-basis: 28%;
+      flex-basis: 40%;
+
+      .social-list{
+        display: flex;
+
+        & i{
+          font-size: $fontReg;
+        }
+      }
     }
 
     & .right-area{
-      background-color: blue;
       flex-basis: 50%;
       display: flex;
 
@@ -46,11 +52,13 @@ footer{
 
   // TIPOGRAFIA footer
 
-  p,
+  li,
   a{
     color:$footer;
     font-weight: $fontHeavier;
+    font-size: $fontMini;
   }
+
 
 
 }

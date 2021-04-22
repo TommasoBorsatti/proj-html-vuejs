@@ -1703,11 +1703,15 @@ footer .container {
   flex-wrap: wrap;
 }
 footer .container .left-area {
-  background-color: green;
-  flex-basis: 28%;
+  flex-basis: 40%;
+}
+footer .container .left-area .social-list {
+  display: flex;
+}
+footer .container .left-area .social-list i {
+  font-size: 18px;
 }
 footer .container .right-area {
-  background-color: blue;
   flex-basis: 50%;
   display: flex;
 }
@@ -1725,8 +1729,9 @@ footer .container .center-area {
   color: white;
   text-align: center;
 }
-footer p,
+footer li,
 footer a {
   color: #abab8c;
   font-weight: 600;
+  font-size: 12px;
 }

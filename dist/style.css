@@ -1290,6 +1290,20 @@ button:focus {
   line-height: 50px;
 }
 
+#sidebar {
+  position: fixed;
+  right: 0px;
+  top: 20vh;
+  width: 30px;
+  height: 140px;
+  border-radius: 4px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -1332,20 +1346,6 @@ button:focus {
 }
 .hero > .hero-box {
   text-align: center;
-}
-
-#sidebar {
-  position: fixed;
-  right: 0px;
-  top: 20vh;
-  width: 30px;
-  height: 140px;
-  border-radius: 4px;
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 
 section.sect-box {

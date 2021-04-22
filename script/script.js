@@ -47,23 +47,23 @@ const App = new Vue ({
 
       {
         label:"fab fa-facebook-square",
-        url:"https://it.wikipedia.org/wiki/Episodi_di_Breaking_Bad_(prima_stagione)",
+        url:"https://it.wikipedia.org/wiki/Facebook",
         description: "facebook"
       },
       {
         label:"fab fa-twitter",
-        url:"https://it.wikipedia.org/wiki/Episodi_di_Breaking_Bad_(seconda_stagione)",
+        url:"https://it.wikipedia.org/wiki/Twitter",
         description: "twitter"
 
       },
       {
         label:"fab fa-instagram",
-        url:"https://it.wikipedia.org/wiki/Episodi_di_Breaking_Bad_(terza_stagione)",
+        url:"https://it.wikipedia.org/wiki/Instagram",
         description: "instagram"
       },
       {
         label:"fab fa-linkedin",
-        url:"https://it.wikipedia.org/wiki/Episodi_di_Breaking_Bad_(terza_stagione)",
+        url:"https://it.wikipedia.org/wiki/LinkedIn",
         description: "linkedIn"
       },
 

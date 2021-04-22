@@ -1135,7 +1135,7 @@ h2 {
   color: #141423;
 }
 h2 > span {
-  color: #1fad95;
+  color: #EF6F35;
   font-weight: 300;
 }
 
@@ -1187,7 +1187,7 @@ label.bar-label {
   z-index: 20;
 }
 label.side-label {
-  background-color: #1fad95;
+  background-color: #EF6F35;
   width: 100px;
   height: 45px;
   position: absolute;
@@ -1230,10 +1230,10 @@ label.side-label {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  background-color: #1fad95;
+  background-color: #EF6F35;
 }
 #main-nav .customer-area label i {
-  color: #1fad95;
+  color: #EF6F35;
   cursor: pointer;
 }
 
@@ -1245,14 +1245,14 @@ label.side-label {
 button {
   cursor: pointer;
   border: none;
-  background-color: #1fad95;
+  background-color: #EF6F35;
   color: #FFF;
   padding: 15px 32px;
   border-radius: 8px;
 }
 button.alt {
   background-color: #FFF;
-  color: #1fad95;
+  color: #EF6F35;
   font-weight: 700;
 }
 button.alt span {
@@ -1263,11 +1263,27 @@ button.alt span:hover {
   color: #FFF;
 }
 button.alt:hover {
-  background-color: #1fad95;
+  background-color: #EF6F35;
   color: #FFF;
 }
 button:focus {
   outline: none;
+}
+
+.top-page {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #EF6F35;
+  color: #FFF;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
 }
 
 #main-nav {
@@ -1378,7 +1394,7 @@ section.sect-box#learn .img-box::after {
   right: -50px;
 }
 section.sect-box#learn a {
-  color: #1fad95;
+  color: #EF6F35;
   font-weight: 700;
 }
 section.sect-box#upgrade {
@@ -1580,7 +1596,7 @@ section.sect-box#transform button:hover > a {
   align-items: center;
 }
 .breaker#customer-data h2 {
-  color: #1fad95;
+  color: #EF6F35;
   font-weight: 700;
 }
 .breaker#newsletters {
@@ -1616,7 +1632,7 @@ section.triplet .triplet-row .triplet-box {
   cursor: pointer;
 }
 section.triplet .triplet-row .triplet-box:hover p {
-  color: #1fad95;
+  color: #EF6F35;
 }
 section.triplet .triplet-row .triplet-box .img-box {
   position: relative;
@@ -1676,7 +1692,7 @@ section.triplet#courses .triplet-box {
   background-color: #FFF;
 }
 section.triplet#courses h3 {
-  color: #1fad95;
+  color: #EF6F35;
   font-weight: 700;
   font-size: 18px;
 }
@@ -1684,7 +1700,7 @@ section.triplet#blogs {
   background-color: #f5f5f5;
 }
 section.triplet#blogs .triplet-box:hover p {
-  color: #1fad95;
+  color: #EF6F35;
 }
 section.triplet#blogs p {
   font-weight: 700;

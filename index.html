@@ -55,13 +55,13 @@
           <div class="customer-area">
             <!-- elenco dei link customer area-->
             <ul>
-              <li class="mr-2"><a href="#"><i id="cart" class=" ml-2 fas fa-shopping-cart"></i></a></li>
+              <li class="mr-2"><a target="_blank" href="https://www.arredopiscopo.it/wp-content/uploads/2015/07/Carrello-CARTY-125-lt.jpg"><i id="cart" class=" ml-2 fas fa-shopping-cart"></i></a></li>
               <li v-for="link in customerAreaLinks" class="mr-2"><a target="_blank" :href="link.url"><i class="ml-2" :class="link.label"></i></a></li>
             </ul>
             <!-- /elenco dei link customer area -->
             <!-- campo di input della searchbar connessa con v-model a una variabile js con VUE -->
             <input id="nav-searchbar" v-model="searchInput" @keydown.enter="mySearch" class="ml-2 pv-2 pl-2 pr-7" type="text" placeholder="Search..">
-            <label class="ml-5 bar-label" for="nav-searchbar"><i class="fas fa-search"></i></label>
+            <label @click="mySearch" class="ml-5 bar-label" for="nav-searchbar"><i class="fas fa-search"></i></label>
             <!-- /campo di input della searchbar connessa con v-model a una variabile js con VUE -->
           </div>
           <!-- /sezione navbar con carrello, account e searchbar -->
@@ -76,7 +76,7 @@
         <div class="hero-box">
           <h3 class="hero-subtitle">Commence business</h3>
           <h1 class="hero-title">Distant Mentoring Program</h1>
-          <button id="hero-button" class="mt-8 alt">Download free guidebook<span class="ml-1">&rarr;</span></button>
+          <button id="hero-button" class="mt-8 alt"></a>Download free guidebook<span class="ml-1">&rarr;</span></button>
         </div>
         <!-- /area con titolazione e button dell hero -->
         <!-- sidebar dell'Hero - posizionata in modo Assoluto -->
@@ -105,7 +105,7 @@
             <h4 class="sect-intro mb-5">EVERYTHING IN <strong>MAXCOACH</strong></h4>
             <h2 class="sect-title mb-5">Learn about our <span>Work Culture</span> at MaxCoach</h2>
             <p class="sect-content mb-5">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-            <p class="sect-link">Have questions? <a href="">Get free guide &rarr;</a></p>
+            <p class="sect-link">Have questions? <a target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale">Get free guide &rarr;</a></p>
           </div>
           <!-- box del testo -->
           <!-- box con immagini -->
@@ -140,7 +140,7 @@
             <h4 class="sect-intro mb-5">HOW WE WORK</h4>
             <h2 class="sect-title mb-5">Upgrade your Skills <span>Upgrade Your Life</span></h2>
             <p class="sect-content mb-5">Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
-            <a class="sect-link" href="">Download free guidebook &rarr;</a>
+            <a class="sect-link" target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale">Download free guidebook &rarr;</a>
           </div>
           <!-- box del testo -->
           <!-- box con immagini -->
@@ -243,7 +243,7 @@
           </ul>
           <!-- /bullets -->
           <div class="text-box mt-5 pt-5 pb-20">
-            <p>Control your personal preference settings to get notified about appropriate courses. <a href="#">View all courses &rarr;</a></p>
+            <p>Control your personal preference settings to get notified about appropriate courses. <a target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale">View all courses &rarr;</a></p>
           </div>
         </div>
       </div>
@@ -258,7 +258,7 @@
             <h4 class="sect-intro mb-5">TESTIMONIALS</h4>
             <h2 class="sect-title mb-5">Why Do People <span>*Hearts*</span> Us?</h2>
             <p class="sect-content mb-5">Seeking for verbals of our service quality? Find them here. Everything is transparent and straightforward for your sense of justification. </p>
-            <a class="sect-link" href="">View all &rarr;</a>
+            <a class="sect-link" target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale">View all &rarr;</a>
           </div>
           <!-- box del testo -->
           <!-- box personalizzato per la sezione con div annidati -->
@@ -300,7 +300,7 @@
             <h4 class="sect-intro mb-5">EVERYTHING IN <strong>MAXCOACH</strong></h4>
               <h2 class="sect-title mb-5">We're Here To <span>Transform</span> You!</h2>
             <p class="sect-content mb-5">As learners, people can enjoy great companionship from MaxCoach mentors and educators. We can help you develop and grow at your best.</p>
-            <button class="plat-10"><a class="sect-link" href="#">Get free guide</a></button>
+            <button class="plat-10"><a class="sect-link" target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale">Get free guide</a></button>
           </div>
           <!-- box del testo -->
           <!-- box con immagini -->
@@ -457,7 +457,7 @@
 
     <!-- bottone dinamico per top-page -->
     <div class="top-page">
-      <span>&uarr;</span>
+      <a href="#">&uarr;</a>
     </div>
     <!-- /bottone dinamico per top-page -->
 

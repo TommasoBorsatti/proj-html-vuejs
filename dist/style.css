@@ -1278,12 +1278,16 @@ button:focus {
   height: 50px;
   border-radius: 100%;
   background-color: #EF6F35;
-  color: #FFF;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 45px;
+  font-size: 36px;
+}
+.top-page a {
+  color: #FFF;
+  padding: 10px;
+  line-height: 50px;
 }
 
 #main-nav {
@@ -1600,11 +1604,43 @@ section.sect-box#transform button:hover > a {
   font-weight: 700;
 }
 .breaker#newsletters {
+  position: relative;
   display: block;
+}
+.breaker#newsletters::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/maxcoach-shape-02.png");
+  background-size: contain;
+  bottom: 180px;
+  left: 40px;
 }
 .breaker#newsletters .newsletter-box {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.breaker#newsletters .newsletter-box::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/maxcoach-shape-02.png");
+  background-size: contain;
+  top: 0;
+  right: 40px;
+}
+.breaker#newsletters .newsletter-box::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/maxcoach-shape-09.png");
+  background-size: contain;
+  top: -100px;
+  right: 20px;
 }
 .breaker#newsletters .newsletter-box .text-box {
   flex-basis: 60%;

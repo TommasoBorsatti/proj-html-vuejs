@@ -55,17 +55,51 @@
       font-weight: $fontHeaviest;
     }
 
-
-
   }
 
   &#newsletters{
-
+    position: relative;
     display: block;
+
+    &::after{
+      content: "";
+      position:absolute;
+      width: 40px;
+      height: 40px;
+      background-image: $bgFirst;
+      background-size: contain;
+      bottom: 180px;
+      left: 40px;
+    }
 
     & .newsletter-box{
       display: flex;
       justify-content: center;
+      position: relative;
+
+      // decorazioni specifiche della sezione
+
+      &::after{
+        content: "";
+        position:absolute;
+        width: 80px;
+        height: 80px;
+        background-image: $bgFirst;
+        background-size: contain;
+        top: 0;
+        right: 40px;
+      }
+
+      &::before{
+        content: "";
+        position:absolute;
+        width: 200px;
+        height: 200px;
+        background-image: $bgSeventh;
+        background-size: contain;
+        top: -100px;
+        right: 20px;
+      }
 
       & .text-box{
         flex-basis: 60%;
@@ -87,7 +121,5 @@
       font-weight: $fontHeavier;
     }
   }
-
-
 
 }

@@ -31,6 +31,7 @@ button{
   &:focus{
     outline: none;
   }
+
 }
 
 // BOTTONE DINAMICO TOP-PAGE
@@ -43,13 +44,17 @@ button{
   height: 50px;
   border-radius: 100%;
   background-color: $other;
-  color: $secondary;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: $fontUltra;
+  font-size: $fontSuper;
 
+  & a{
+    color: $secondary;
+    padding: 10px;
+    line-height: 50px
 
+  }
 
 }
